@@ -1,7 +1,6 @@
 # semaforo
 ![semaforo foto1](semaforo1.jpg)
-## Exercícios da página 15/16 da apostila de Portugol Studio
-
+## Exercícios de sistemas embarcados
 - Modadalidade: individual
 - Entrega: Github pessoal
 
