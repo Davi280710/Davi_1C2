@@ -1,16 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patos de Borracha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    header {
+      background: #ffcc00;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #ffaa00;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee') no-repeat center/cover;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+    }
+
+    .hero button {
+      padding: 15px 25px;
+      font-size: 1em;
+      border: none;
+      background: #ffcc00;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .card button {
+      margin-top: 10px;
+      padding: 10px;
+      border: none;
+      background: #ffaa00;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Rubber Duck</h1>
+<header>
+  <h1>🦆 Patos de Borracha</h1>
+  <p>Os patos mais divertidos da internet!</p>
+</header>
 
-<h2>oferta especial 25 unidades por 20% off por tempo limitado!!!</h2>
+<nav>
+  <a href="#">Início</a>
+  <a href="#">Produtos</a>
+  <a href="#">Contato</a>
+</nav>
 
-<img src="patinho.jpg">
+<section class="hero">
+  <h2>Conheça nossos patos incríveis!</h2>
+  <p>Coloridos, divertidos e perfeitos para todas as idades</p>
+  <button>Comprar Agora</button>
+</section>
+
+<section class="products">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1563298723-dcfebaa392e3" alt="Pato clássico">
+    <h3>Pato Clássico</h3>
+    <p>O tradicional pato amarelo!</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1601758064224-6c48d1d8d43f" alt="Pato pirata">
+    <h3>Pato Pirata</h3>
+    <p>Para aventuras no banho!</p>
+    <button>Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1590080875852-ba44f3b6c02b" alt="Pato astronauta">
+    <h3>Pato Astronauta</h3>
+    <p>Direto do espaço!</p>
+    <button>Comprar</button>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Patos de Borracha - Todos os direitos reservados</p>
+</footer>
+
 </body>
 </html>
