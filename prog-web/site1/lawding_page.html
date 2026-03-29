@@ -1,145 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patos de Borracha</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f8ff;
-      color: #333;
-    }
-
-    header {
-      background: #ffcc00;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-
-    nav {
-      background: #ffaa00;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-      background: url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee') no-repeat center/cover;
-      color: white;
-    }
-
-    .hero h2 {
-      font-size: 2.5em;
-    }
-
-    .hero button {
-      padding: 15px 25px;
-      font-size: 1em;
-      border: none;
-      background: #ffcc00;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .card img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-
-    .card button {
-      margin-top: 10px;
-      padding: 10px;
-      border: none;
-      background: #ffaa00;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #333;
-      color: white;
-    }
-  </style>
+    <title>Imóveis - Sua Casa Ideal</title>
 </head>
 <body>
 
-<header>
-  <h1>🦆 Patos de Borracha</h1>
-  <p>Os patos mais divertidos da internet!</p>
-</header>
+    <header>
+        <h1>Encontre o Imóvel dos Seus Sonhos</h1>
+        <p>Casas, apartamentos e terrenos com as melhores oportunidades</p>
+    </header>
 
-<nav>
-  <a href="#">Início</a>
-  <a href="#">Produtos</a>
-  <a href="#">Contato</a>
-</nav>
+    <nav>
+        <a href="#inicio">Início</a> |
+        <a href="#imoveis">Imóveis</a> |
+        <a href="#contato">Contato</a>
+    </nav>
 
-<section class="hero">
-  <h2>Conheça nossos patos incríveis!</h2>
-  <p>Coloridos, divertidos e perfeitos para todas as idades</p>
-  <button>Comprar Agora</button>
-</section>
+    <section id="inicio">
+        <h2>Bem-vindo</h2>
+        <p>Somos especialistas em encontrar o imóvel perfeito para você e sua família.</p>
+    </section>
 
-<section class="products">
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1563298723-dcfebaa392e3" alt="Pato clássico">
-    <h3>Pato Clássico</h3>
-    <p>O tradicional pato amarelo!</p>
-    <button>Comprar</button>
-  </div>
+    <section id="imoveis">
+        <h2>Imóveis em Destaque</h2>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1601758064224-6c48d1d8d43f" alt="Pato pirata">
-    <h3>Pato Pirata</h3>
-    <p>Para aventuras no banho!</p>
-    <button>Comprar</button>
-  </div>
+        <article>
+            <h3>Casa em Vinhedo</h3>
+            <p>3 quartos, 2 banheiros, garagem para 2 carros.</p>
+            <p>Preço: R$ 550.000</p>
+        </article>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1590080875852-ba44f3b6c02b" alt="Pato astronauta">
-    <h3>Pato Astronauta</h3>
-    <p>Direto do espaço!</p>
-    <button>Comprar</button>
-  </div>
-</section>
+        <article>
+            <h3>Apartamento em Campinas</h3>
+            <p>2 quartos, 1 suíte, varanda.</p>
+            <p>Preço: R$ 420.000</p>
+        </article>
 
-<footer>
-  <p>&copy; 2026 Patos de Borracha - Todos os direitos reservados</p>
-</footer>
+        <article>
+            <h3>Terreno em Condomínio</h3>
+            <p>500m² em área nobre.</p>
+            <p>Preço: R$ 300.000</p>
+        </article>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label>Nome:</label><br>
+            <input type="text" name="nome"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>Mensagem:</label><br>
+            <textarea name="mensagem"></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Imobiliária - Todos os direitos reservados</p>
+    </footer>
 
 </body>
 </html>
